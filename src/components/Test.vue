@@ -10,6 +10,7 @@
       :card-img="event.thumbnail.url"
       :card-title="event.title"
       :card-dates="event.dates"
+      :event-url="`https://vmeste-region.ru/votes/${event.id}`"
     />
   </v-touch>
 </template>

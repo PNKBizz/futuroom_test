@@ -1,9 +1,9 @@
 <template functional>
-    <div class="card">
+    <v-touch tag="a" class="card" :href="props.eventUrl" target="_blank" :alt="props.cardTitle">
         <div class="card__dates">{{ props.cardDates }}</div>
         <div class="card__img" :style="{ backgroundImage: `url(${props.cardImg})` }"></div>
         <h3 class="card__title">{{ props.cardTitle }}</h3>
-    </div>
+    </v-touch>
 </template>
 
 <style lang="scss" scoped>
@@ -13,7 +13,9 @@
         width: 30%;
         border: 1px solid rgb(184, 184, 184);
         flex-grow: 1;
-        z-index: -1;
+        display: block;
+        text-decoration: none;
+        color: inherit;
 
         &:not(:last-child) {
             margin-right: 20px;
