@@ -9,6 +9,7 @@
 <style lang="scss" scoped>
     .card {
         min-width: 250px;
+        max-width: 450px;
         width: 30%;
         border: 1px solid rgb(184, 184, 184);
         flex-grow: 1;
